@@ -23,7 +23,7 @@ public class ReservaControlador {
 
     @Autowired
     private ReservaRep reservaRepositorio;
-
+//Reservas
     // Listar todas las reservas
     @GetMapping("/listarreservas")
     public List<Reserva> listarReservas() {

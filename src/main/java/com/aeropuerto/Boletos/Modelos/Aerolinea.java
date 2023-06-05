@@ -5,7 +5,6 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 import java.sql.Date;
@@ -19,7 +18,6 @@ public class Aerolinea {
     private Date fechaInicio;
     private String numeroPermiso;
     @ManyToOne
-    @JoinColumn(name = "id_avion")
     private Avion Fk_id_avion;
     
     //Constructor Vacio
